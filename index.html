@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Project | Avijit Roy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/datetime.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload=clearImage();>
+    <canvas id="canvas"></canvas>
+    <div id="rev">
+        <h1>Slideshow of Computer History till 1st Program Run on a Computer</h1>
+        <p id="date_time"></p> <!-- Full Feature Running Clock -->
+        <div id="container">
+            <p style="font-weight: bold;">Image Shown: <input type="text" id="counter" value="0" readonly /> </p>
+            <br />
+            <img id=slide src=images/a0.jpg alt="Welcome" /><br><br>
+            <input type=button class=button value='Prev' onclick=showPrev(); />
+            <input type=button class=button value='Next' onclick=showNext(); />
+
+            <!-- Time interval for Auto Slide -->
+            <select name="seconds" onchange="setFrequency(this.value);">
+                <option value="2000"> 2 seconds</option>
+                <option value="3000"> 3 seconds</option>
+                <option value="4000"> 4 seconds</option>
+                <option value="5000"> 5 seconds</option>
+                <option value="6000"> 6 seconds</option>
+                <option value="7000"> 7 seconds</option>
+            </select>
+
+            <input type="button" class="button" value="Auto" onclick="showAuto();" />
+            <input type="button" class="button" value="Stop" onclick="showStop();" />
+        </div>
+        <marquee style="width: 640px; margin: auto;">This slide show is inspired by Computer History. Most of us do not know the hiostory. When computer started to work and when the 1st Program ran on a computer.</marquee>
+
+        <!--Footer-->
+        <div id="footer">
+            <a href="http://avijitroy.com" target="_blank">Avijit Roy Kabyo</a> &copy; 2016
+        </div>
+    </div>
+    <!--JavaScript-->
+    <script type="text/javascript">
+        window.onload = date_time('date_time'); //Clock Runner :-)
+    </script>
+    <!--Blue Rain JavaScript-->
+    <script type="text/javascript" src="js/bluerain.js"></script>
+    <!-- Javascript End -->
+</body>
+</html>

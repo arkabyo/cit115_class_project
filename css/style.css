@@ -1,0 +1,72 @@
+body {
+    /*background-color: black;*/
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: greenyellow;
+}
+
+marquee {
+    color: white;
+}
+
+#container{
+    border: 5px grey ridge;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: lightyellow;
+}
+
+#slide {
+    border: 10px grey ridge;
+	width: 350px;
+}
+
+#rev{
+    position : relative;
+    bottom : 0px;
+    left : 0px;
+    margin : 20px;
+    padding : 5px;
+}
+
+.button {
+    height: 30px;
+    width: 60px;
+    border-width: 4px;
+    margin: 6px;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#canvas {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+}
+
+#counter {
+    text-align: center;
+    font-weight: bold;
+}
+
+#date_time{
+	color: lightgreen;
+	font-size: 24px;
+	font-weight: 800;
+	padding: 15px
+}
+
+#footer{
+    color: white;
+    margin-top: 50px;
+}
